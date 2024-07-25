@@ -1,7 +1,7 @@
 package com.example.primeraapp.todoapp
 
-sealed class TaskCategory {
-    data object Personal : TaskCategory()
-    data object Business : TaskCategory()
-    data object Other : TaskCategory()
+sealed class TaskCategory(var isSelected:Boolean = true) {
+    object Personal : TaskCategory()
+    object Business : TaskCategory()
+    object Other : TaskCategory()
 }
